@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JOSTech Web Landing Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <style>
+    .lightbox-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .lightbox-image {
+      text-align: center;
+      position: fixed;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      z-index: 10000;
+    }
+
+    .lightbox-image img {
+      max-width: 80vw;
+      max-height: 80vh;
+    }
+
+    .lightbox-controls {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 10000;
+      color: #fff;
+    }
+
+    .lightbox-controls .lb-close {
+      position: fixed;
+      top: 0;
+      right: 20px;
+      font-size: 60px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .lightbox-controls .lb-prev {
+      position: fixed;
+      top: 50vh;
+      left: 1vw;
+      font-size: 50px;
+      transform: translateY(-50%);
+    }
+
+    .lightbox-controls .lb-next {
+      position: fixed;
+      top: 50vh;
+      right: 4vw;
+      font-size: 50px;
+      transform: translateY(-50%);
+    }
+
+    .lightbox-controls .lb-disabled {
+      color: gray;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">JosTech</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="/joswms.html" class="nav-link"><span>Solutions</span></a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link " href="#!" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<span>Learning</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item"
+								href="/coursetpmanage.html">หลักสูตรการจัดการโลจิสติกส์และซัพพลายเชน</a>
+							<a class="dropdown-item" href="/coursewsmanage.html">หลักสูตรบริหารคลังสินค้า</a>
+							<a class="dropdown-item" href="/courseivmanage.html">หลักสูตรบริหารสินค้าคงคลัง</a>
+							<a class="dropdown-item" href="/coursetpmanage.html">หลักสูตรบริหารขนส่ง</a>
+							<a class="dropdown-item" href="/coursebsfmanage.html">หลักสูตรบริหารธุรกิจและโรงงาน</a>
+							<a class="dropdown-item" href="/coursepsdevelop.html">หลักสูตรพัฒนาบุคลากร</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="/project.html" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+  <section class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+        <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+          <h1 class="mb-3 bread">In house &amp; Public</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                  class="ion-ios-arrow-forward"></i></a></span> <span>In house &amp; Public <i
+                class="ion-ios-arrow-forward"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row ">
+        <!-- Photo Grid -->
+        <div class="row">
+          <div class="column">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta12.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta5.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta10.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta2.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta3.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img class="ftco-animate js-lightbox" src="/images/projecta10.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta7.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta12.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta8.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta9.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta12.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta5.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta2.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta3.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img class="ftco-animate js-lightbox" src="/images/projecta8.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta1.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta7.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta12.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta8.jpg" style="width:100%">
+            <img class="ftco-animate js-lightbox" src="/images/projecta9.jpg" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <!-- .section -->
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia
+						and Consonantia</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info ">
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">ที่อยู่</h3>
+						<a href="#!" style="color: #ffffff;">
+							<p>19 ถ.เสนานิคม 1</p>
+							<p>แขวงลาดพร้าว เขตลาดพร้าว</p>
+							<p>กรุงเทพมหานคร 10230</p>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">เบอร์ติดต่อ</h3>
+						<p><a href="tel://1234567920">061-789-3549</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
+					<div class="align-self-stretch box  text-center" style="padding: 1.5rem 0;">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">อีเมล</h3>
+						<p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+						<div class="iconcontacthead" style="margin-top: 5rem;">
+							<h2><strong>Social Media</strong></h2>
+						</div>
+						<div class="iconcontact float-left">
+							<div class="ftco-footer-widget">
+								<ul class="ftco-footer-social list-unstyled mb-0">
+									<li class="ftco-animate "><a href="#" class="twitter"><span
+												class="icon-twitter"></span></a></li>
+									<li class="ftco-animate"><a href="#" class=" facebook"><span
+												class="icon-facebook"></span></a></li>
+									<li class="ftco-animate "><a href="#" class="tiktok"><span
+												class="fab fa-tiktok"></span></a></li>
+									<li class="ftco-animate "><a href="#" class="instagram"><span
+												class="icon-youtube-play"></span></a></li>
+								</ul>
+							</div>
+							<div class="iconcontact">
+								<h3 class="ftco-animate ">&nbsp;:&nbsp;JOSTech</h3>
+							</div>
+						</div>
+						<div class="iconcontact1 float-left">
+							<div class="ftco-footer-widget">
+								<ul class="ftco-footer-social list-unstyled mb-0">
+									<li class="ftco-animate"><a href="#" class="line"><span
+												class="fab fa-line"></span></a></li>
+								</ul>
+							</div>
+							<div class="iconcontact">
+								<h3 class="ftco-animate ">&nbsp;:&nbsp;surasak-jos</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-section mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights
+						reserved | JOSTech Web
+						Landing Page
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/projectimg.js"></script>
+  <script>
+    let jsLightbox = new JsLightbox();
+    jsLightbox.render();
+  </script>
+</body>
+
+</html>

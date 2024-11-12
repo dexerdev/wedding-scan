@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wedding Som'O & Peemai</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="/static/assets/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/jocky-starline" rel="stylesheet">
+                
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/static/assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="/static/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+    <link href="/static/assets/css/style.css" rel="stylesheet">
+    <style>
+        .fade-slide-right,
+        .fade-slide-left,
+        .fade-slide-branner {
+            opacity: 0;
+            position: relative;
+            transition: all 3.5s ease;
+        }
+
+        .fade-slide-right {
+            right: 50px;
+        }
+
+        .fade-slide-left {
+            left: 50px;
+        }
+
+        .fade-slide-branner {
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-1 mt-0 py-4" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 pb-0 pt-lg-0">
+                    <!-- <h3 class="text-primary mb-3">I'm</h3> -->
+                    <h1 class="display-3 mb-3 text-center" style=" font-family: 'Jocky Starline', sans-serif; white-space: nowrap;">
+                        <span class="fade-slide-right">JIDAPA</span>
+                        <span><i class="fa-solid fa-heart" style="color: #ffabab;"></i></span>
+                        <span class="fade-slide-left">PEEMAI</span>
+                    </h1>
+                    <h2 class="typed-text-output d-inline text-center" style="color: #ffabab; font-family: 'Jocky Starline', sans-serif;"></h2>
+                    <div class="typed-text d-none" >However many times., However many ways., You’ll still be the one., I choose each day., Through countless chapters., For all my years., I’m blessed to walk this life, with you near.</div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid fade-slide-branner" src="/static/assets/img/branner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-1">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-lg-12">
+                    <h5 class="display-5 mb-0 text-center">กรอกข้อมูลเพื่อลงทะเบียนรับ QRCODE สำหรับแลกเครื่องดื่ม</h5>
+                </div>
+            </div>
+            <div class="row g-5">
+                <!-- <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2">My office:</p>
+                    <h3 class="fw-bold">123 Street, New York, USA</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Call me:</p>
+                    <h3 class="fw-bold">+012 345 6789</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Mail me:</p>
+                    <h3 class="fw-bold">info@example.com</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Follow me:</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div> -->
+                <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="กรุณาใส่ชื่อเล่่น">
+                                    <label for="name">ชื่อเล่น <span style="color: red;">*</span></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="phone"
+                                        placeholder="กรุณาใส่เบอร์โทรศัพท์">
+                                    <label for="phone">เบอร์โทรศัพท์ <span style="color: red;">*</span></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="table-id"
+                                        placeholder="กรุณาใส่หมายเลขโต๊ะ">
+                                    <label for="table-id">หมายเลขโต๊ะ <span style="color: red;">*</span></label> 
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <span style="color: red;">หมายเหตุ</span> <span class="ml-1">1 โต๊ะสามารถลงทะเบียนรับ QRCODE ได้จำนวน 1 ครั้งเท่านั้น</span>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn btn-primary py-3 px-5" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#add_re_location">
+                                    <span>ยืนยัน</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    <!-- Modal เริ่มต้น -->
+    <div class="modal fade" id="add_re_location" tabindex="-1" aria-labelledby="addReLocationLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- หัวข้อ Modal -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addReLocationLabel">QRCODE สำหรับสแกนรับเครื่องดื่ม</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- เนื้อหา Modal -->
+                <div class="modal-body">
+                    <div class="img-qrcode">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg"
+                            alt="QRCODE" width="100%">
+                    </div>
+                </div>
+                <!-- ปุ่มใน Modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="downloadImage()">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-success">ยืนยัน</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/lib/wow/wow.min.js"></script>
+    <script src="/static/assets/lib/easing/easing.min.js"></script>
+    <script src="/static/assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/assets/lib/typed/typed.min.js"></script>
+    <script src="/static/assets/lib/counterup/counterup.min.js"></script>
+    <script src="/static/assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/assets/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="/static/assets/lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/assets/js/main.js"></script>
+
+    <script>
+        window.addEventListener('load', function () {
+            document.querySelector('.fade-slide-right').style.opacity = 1;
+            document.querySelector('.fade-slide-right').style.right = 0;
+
+            document.querySelector('.fade-slide-left').style.opacity = 1;
+            document.querySelector('.fade-slide-left').style.left = 0;
+
+            document.querySelector('.fade-slide-branner').style.opacity = 1;
+            document.querySelector('.fade-slide-branner').style.left = 0;
+        });
+    </script>
+
+    <script>
+        function downloadImage() {
+            // URL ของรูปภาพที่ต้องการให้ดาวน์โหลด
+            const imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg';
+
+            // สร้าง element <a> สำหรับดาวน์โหลด
+            const link = document.createElement('a');
+            link.href = imageUrl;
+            link.download = 'downloaded-image.jpg'; // ชื่อไฟล์ที่ดาวน์โหลด
+            link.target = '_self'; // เพื่อบังคับดาวน์โหลด
+
+            // เพิ่ม element ไปยัง DOM ชั่วคราวและสั่งให้ดาวน์โหลด
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link); // ลบ element ออกจาก DOM
+        }
+    </script>
+</body>
+
+</html>

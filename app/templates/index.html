@@ -17,7 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/jocky-starline" rel="stylesheet">
-                
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,700;0,800;0,900;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
@@ -78,8 +80,10 @@
                         <span><i class="fa-solid fa-heart" style="color: #ffabab;"></i></span>
                         <span class="fade-slide-left">PEEMAI</span>
                     </h1>
-                    <h2 class="typed-text-output d-inline text-center" style="color: #ffabab; font-family: 'Jocky Starline', sans-serif;"></h2>
-                    <div class="typed-text d-none" >However many times., However many ways., You’ll still be the one., I choose each day., Through countless chapters., For all my years., I’m blessed to walk this life, with you near.</div>
+                    <h2 class="typed-text-output d-inline text-center" style="color: #ffabab; font-family: Kanit, sans-serif;
+                    font-weight: 400;
+                    font-style: italic;"></h2>
+                    <div class="typed-text d-none" >From now and forever</div>
                 </div>
                 <div class="col-lg-6">
                     <img class="img-fluid fade-slide-branner" src="/static/assets/img/branner.png" alt="">
@@ -94,7 +98,8 @@
         <div class="container py-1">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="col-lg-12">
-                    <h5 class="display-5 mb-0 text-center">กรอกข้อมูลเพื่อลงทะเบียนรับ QRCODE สำหรับแลกเครื่องดื่ม</h5>
+                    <h5 class="display-5 mb-0 text-center" style="font-family: Kanit, sans-serif;
+                    font-weight: 600;">กรอกข้อมูลเพื่อลงทะเบียนรับ QRCODE สำหรับแลกเครื่องดื่ม</h5>
                 </div>
             </div>
             <div class="row g-5">
@@ -127,16 +132,17 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="phone"
-                                        placeholder="กรุณาใส่เบอร์โทรศัพท์">
-                                    <label for="phone">เบอร์โทรศัพท์ <span style="color: red;">*</span></label>
+                                    <input type="text" class="form-control" id="phone" placeholder="กรุณาใส่เบอร์โทรศัพท์" maxlength="10" pattern="\d{10}">
+                                    <label for="phone">เบอร์โทรศัพท์ <span style="color: red;">*</span> 
+                                        <span style="font-weight: 600; color:#bdbdbd;">ตัวอย่าง 0812345678</span>
+                                    </label>
                                 </div>
-                            </div>
+                            </div>                            
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="table-id"
                                         placeholder="กรุณาใส่หมายเลขโต๊ะ">
-                                    <label for="table-id">หมายเลขโต๊ะ <span style="color: red;">*</span></label> 
+                                    <label for="table-id">หมายเลขโต๊ะ <span style="color: red;">*</span> <span style="font-weight: 600; color:#bdbdbd;">ตัวอย่าง VIP1 หรือ TABLE1</span></label> 
                                 </div>
                             </div>
                             <div class="col-12">

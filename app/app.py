@@ -28,3 +28,8 @@ def index():
 # @login_required
 def scan_qr():
     return render_template("scan_qr.html")
+
+@app.route("/reward")
+# @login_required
+def reward():
+    return render_template("reward.html")

@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <!-- Contact End -->
@@ -120,7 +120,7 @@
     <script src="/static/assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="/static/assets/lib/isotope/isotope.pkgd.min.js"></script>
     <script src="/static/assets/lib/lightbox/js/lightbox.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Template Javascript -->
     <script src="/static/assets/js/main.js"></script>
     <script src="/static/assets/js/html5-qrcode.min.js"></script>
@@ -158,47 +158,72 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-    const cameraSelect = document.getElementById('camera-select');
-    let qrCodeReader = new Html5Qrcode("reader");
-    function onScanSuccess(decodedText, decodedResult) {
-        _onScanSuccess(decodedText, LocationId, PickProdLocId, pickupId, palletCode);
-        // Optionally, stop scanning once a QR code is detected.
-        qrCodeReader.stop();
-    }
-    Html5Qrcode.getCameras().then(cameras => {
-        if (cameras.length === 0) {
-            console.log("No cameras found.");
-            return;
-        }
-        cameras.forEach(camera => {
-            const option = new Option(camera.label, camera.id);
-            cameraSelect.appendChild(option);
-        });
-        cameraSelect.addEventListener('change', event => {
-            qrCodeReader.stop().then(() => {
+            const cameraSelect = document.getElementById('camera-select');
+            let qrCodeReader = new Html5Qrcode("reader");
+            function onScanSuccess(decodedText, decodedResult) {
+                _onScanSuccess(decodedText);
+                // Optionally, stop scanning once a QR code is detected.
+                qrCodeReader.stop();
+            }
+            Html5Qrcode.getCameras().then(cameras => {
+                if (cameras.length === 0) {
+                    console.log("No cameras found.");
+                    return;
+                }
+                cameras.forEach(camera => {
+                    const option = new Option(camera.label, camera.id);
+                    cameraSelect.appendChild(option);
+                });
+                cameraSelect.addEventListener('change', event => {
+                    qrCodeReader.stop().then(() => {
+                        qrCodeReader.start(
+                            cameraSelect.value,
+                            { fps: 10, qrbox: { width: 180, height: 180 } },
+                            onScanSuccess,
+                            error => ({})
+                        ).catch(err => console.error("Error starting QR scan: ", err));
+                    }).catch(err => console.error("Error stopping QR scan: ", err));
+                });
                 qrCodeReader.start(
-                    cameraSelect.value,
+                    cameras[0].id,
                     { fps: 10, qrbox: { width: 180, height: 180 } },
                     onScanSuccess,
                     error => ({})
                 ).catch(err => console.error("Error starting QR scan: ", err));
-            }).catch(err => console.error("Error stopping QR scan: ", err));
+            });
+            function _onScanSuccess(plainText) {
+                console.log('Qrcode >>' + plainText);
+                var url = '/api/check_code';
+                var json = JSON.stringify({
+                    "code": plainText
+                });
+                fetch(url, {
+                    method: "POST",
+                    body: json,
+                    headers: {
+                        "Content-type": "application/json; charset=utf-8"
+                    }
+                }).then(response => response.json()).then((data) => {
+                    if (data.success) {
+                        Swal.fire({
+                            title: data.message,
+                            text: data.data,
+                            icon: "success",
+                            showconfirmbutton: true,
+                        }).then(function () {
+                            // window.location.href = "/thank";
+                        });
+                    }
+                    else {
+                        Swal.fire({
+                            title: data.message,
+                            icon: "error",
+                            showconfirmbutton: true,
+                        });
+                    }
+                })
+            }
         });
-        qrCodeReader.start(
-            cameras[0].id,
-            { fps: 10, qrbox: { width: 180, height: 180 } },
-            onScanSuccess,
-            error => ({})
-        ).catch(err => console.error("Error starting QR scan: ", err));
-    });
-
-    // var html5QrcodeScanner = new Html5QrcodeScanner(
-    //     "reader", { fps: 10, qrbox: 250 });
-
-    // html5QrcodeScanner.render(function (qrCodeMessage) {
-    //     onScanSuccess(qrCodeMessage, LocationId, PickProdLocId, pickupId);
-    // }, onScanError);
-});
 
     </script>
 </body>

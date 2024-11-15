@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    platform: linux/amd64
+    image: "asia-southeast1-docker.pkg.dev/nomadic-mesh-441516-k1/wedding-scan/wedding-scan:1.0.1"
+    container_name: wedding-scan
+    network_mode: bridge
+    ports:
+      - "8000:5000"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - ConStr=${ConStr}

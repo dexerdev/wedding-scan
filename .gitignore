@@ -1,3 +1,5 @@
 .vscode
 venv
 app/__pycache__
+google-cloud-sdk
+google-cloud-sdk-426.0.0-darwin-arm.tar.gz

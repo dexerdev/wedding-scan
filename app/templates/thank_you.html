@@ -34,7 +34,7 @@
     <!-- Template Stylesheet -->
     <link href="/static/assets/css/style.css" rel="stylesheet">
     <style>
-        .fade-slide-right,
+        /* .fade-slide-right,
         .fade-slide-left,
         .fade-slide-branner {
             opacity: 0;
@@ -52,10 +52,28 @@
 
         .fade-slide-branner {
             left: 50px;
-        }
+        } */
+
         .custom-margin {
-            margin-top: 4rem; 
-}
+            margin-top: 4rem;
+        }
+
+        .heart-button {
+            background-color: #ffabab !important;
+            color: white !important;
+            border: none;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+
+        .heart-button:hover {
+            background-color: #ff8a8a !important;
+            /* เปลี่ยนสีปุ่มเมื่อ hover */
+        }
+        .pink-text {
+            color: #ff8a8a; /* กำหนดสีของข้อความเป็นสีชมพู */
+        }
     </style>
 </head>
 
@@ -69,29 +87,30 @@
     </div>
     <!-- Spinner End -->
 
- <!-- Header Start -->
- <div class="container-fluid bg-light my-1 mt-0 py-4">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 pb-0 pt-lg-0">
-                <!-- <h3 class="text-primary mb-3">I'm</h3> -->
-                <h1 class="display-3 mb-3 text-center" style=" font-family: 'Jocky Starline', sans-serif; white-space: nowrap;">
-                    <span class="fade-slide-right">JIDAPA</span>
-                    <span><i class="fa-solid fa-heart" style="color: #ffabab;"></i></span>
-                    <span class="fade-slide-left">PEEMAI</span>
-                </h1>
-                <h2 class="typed-text-output d-inline text-center" style="color: #ffabab; font-family: Kanit, sans-serif;
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-1 mt-0 py-4">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 pb-0 pt-lg-0">
+                    <!-- <h3 class="text-primary mb-3">I'm</h3> -->
+                    <h1 class="display-3 mb-3 text-center"
+                        style=" font-family: 'Jocky Starline', sans-serif; white-space: nowrap;">
+                        <span class="fade-slide-right">JIDAPA</span>
+                        <span><i class="fa-solid fa-heart" style="color: #ffabab;"></i></span>
+                        <span class="fade-slide-left">PEEMAI</span>
+                    </h1>
+                    <h2 class="typed-text-output d-inline text-center" style="color: #ffabab; font-family: Kanit, sans-serif;
                 font-weight: 400;
                 font-style: italic;"></h2>
-                <div class="typed-text d-none" >From now and forever</div>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid fade-slide-branner" src="/static/assets/img/logo_wedding2.png" alt="">
+                    <div class="typed-text d-none">From now and forever</div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid fade-slide-branner" src="/static/assets/img/logo_wedding2.png" alt="">
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Header End -->
+    <!-- Header End -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -108,7 +127,7 @@
 
     <!-- Template Javascript -->
     <script src="/static/assets/js/main.js"></script>
-    <script src="/static/assets/js/reward_success.js"></script>
+    <script src="/static/assets/js/thank_you.js"></script>
     <script src="/static/assets/js/html5-qrcode.min.js"></script>
 
     <script>

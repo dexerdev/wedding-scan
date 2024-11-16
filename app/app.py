@@ -33,3 +33,8 @@ def scan_qr():
 # @login_required
 def reward():
     return render_template("reward.html")
+
+@app.route("/thank_you")
+# @login_required
+def thank_you():
+    return render_template("thank_you.html")

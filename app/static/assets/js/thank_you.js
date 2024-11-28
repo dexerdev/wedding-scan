@@ -5,10 +5,23 @@ Swal.fire({
     width: 800,
     confirmButtonColor: '#ffffff',
     confirmButtonText: '❤️',
-    timer: 10000,
     customClass: {
         confirmButton: 'heart-button',
         popup: 'custom-margin'
+    },
+    showClass: {
+        popup: `
+          animate__animated
+          animate__fadeInUp
+          animate__faster
+        `
+    },
+    hideClass: {
+        popup: `
+          animate__animated
+          animate__fadeOutDown
+          animate__faster
+        `
     },
     didOpen: () => {
         const textElement = Swal.getHtmlContainer(); // ดึงองค์ประกอบของข้อความ

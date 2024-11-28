@@ -56,6 +56,15 @@
         .fade-slide-branner {
             left: 50px;
         }
+        #table-id {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+
     </style>
 </head>
 
@@ -138,13 +147,50 @@
                                     </label>
                                 </div>
                             </div>                            
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="table-id"
                                         placeholder="กรุณาใส่หมายเลขโต๊ะ">
                                     <label for="table-id">หมายเลขโต๊ะ <span style="color: red;">*</span> <span style="font-weight: 600; color:#bdbdbd;">ตัวอย่าง VIP1 หรือ TABLE1</span></label> 
                                 </div>
-                            </div>
+                            </div> -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <select class="form-control " id="table-id" 
+                                        style="
+                                            background-color: #ffffff; 
+                                            height: 3.5rem; 
+                                            padding: 0.5rem; 
+                                        ">
+                                        <option value="" disabled selected>กรุณาเลือกหมายเลขโต๊ะ</option>
+                                        <option value="VIP1">VIP1</option>
+                                        <option value="VIP2">VIP2</option>
+                                        <option value="VIP3">VIP3</option>
+                                        <option value="VIP4">VIP4</option>
+                                        <option value="VIP5">VIP5</option>
+                                        <option value="TABLE1">TABLE1</option>
+                                        <option value="TABLE2">TABLE2</option>
+                                        <option value="TABLE3">TABLE3</option>
+                                        <option value="TABLE4">TABLE4</option>
+                                        <option value="TABLE5">TABLE5</option>
+                                        <option value="TABLE6">TABLE6</option>
+                                        <option value="TABLE7">TABLE7</option>
+                                        <option value="TABLE8">TABLE8</option>
+                                        <option value="TABLE9">TABLE9</option>
+                                        <option value="TABLE10">TABLE10</option>
+                                        <option value="TABLE11">TABLE11</option>
+                                        <option value="TABLE12">TABLE12</option>
+                                        <option value="TABLE13">TABLE13</option>
+                                        <option value="TABLE14">TABLE14</option>
+                                        <option value="TABLE15">TABLE15</option>
+                                        <option value="TABLE16">TABLE16</option>
+                                        <option value="TABLE17">TABLE17</option>
+                                        <option value="TABLE18">TABLE18</option>
+                                        <option value="TABLE19">TABLE19</option>
+                                        <option value="TABLE20">TABLE20</option>
+                                    </select>
+                                </div>
+                            </div>                                                       
                             <div class="col-12">
                                 <span style="color: red;">หมายเหตุ</span> <span class="ml-1">1 โต๊ะสามารถลงทะเบียนรับ QRCODE ได้จำนวน 1 ครั้งเท่านั้น</span>
                             </div>
